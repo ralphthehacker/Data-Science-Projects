@@ -1,0 +1,2 @@
+Data from the city of Seattle: https://data.seattle.gov/
+Data from the city of San Francisco: https://data.sfgov.org/
