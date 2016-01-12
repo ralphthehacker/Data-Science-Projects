@@ -4,38 +4,59 @@ import pandas
 # Loading data into the 2 dataframes
 sanfran_df = pandas.DataFrame.from_csv("/Users/ralphblanes/PycharmProjects/Data-Science-Projects/Crime Visualizations/sanfrancisco_incidents_summer_2014.csv")
 
-# # Counting all types of incidents
-# crime_count_dict = {}
-# region_count_dict = {}
-# keys = sanfran_df['Category'].unique()
-# for key in keys:
-#     crime_count_dict[key] = 0
-#
-# for i,key in enumerate(sanfran_df['PdDistrict'].unique()):
-#     region_count_dict[key] = {'KIDNAPPING': 0, 'WEAPON LAWS': 0, 'SECONDARY CODES': 0, 'WARRANTS': 0, 'LOITERING': 0, 'EMBEZZLEMENT': 0, 'PORNOGRAPHY/OBSCENE MAT': 0, 'SUICIDE': 0, 'DRIVING UNDER THE INFLUENCE': 0, 'ROBBERY': 0, 'BURGLARY': 0, 'SUSPICIOUS OCC': 0, 'ARSON': 0, 'BRIBERY': 0, 'FORGERY/COUNTERFEITING': 0, 'DRUNKENNESS': 0, 'GAMBLING': 0, 'OTHER OFFENSES': 0, 'FRAUD': 0, 'FAMILY OFFENSES': 0, 'DRUG/NARCOTIC': 0, 'TRESPASS': 0, 'LARCENY/THEFT': 0, 'VANDALISM': 0, 'NON-CRIMINAL': 0, 'EXTORTION': 0, 'LIQUOR LAWS': 0, 'VEHICLE THEFT': 0, 'STOLEN PROPERTY': 0, 'ASSAULT': 0, 'RUNAWAY': 0, 'MISSING PERSON': 0, 'DISORDERLY CONDUCT': 0, 'PROSTITUTION': 0}
-#
-# #Counting the distribution of different types of crimes
-# for key in crime_count_dict.keys():
-#     for row in sanfran_df.iterrows():
-#         if row[1][0] == key:
-#             crime_count_dict[key] += 1
-#
 
-# for row in sanfran_df.iterrows():
-#      #Counting crimes per region
-#         if row[1][5] in region_count_dict.keys():
-#             cur_region = row[1][5]
-#             cur_crime = row[1][0]
-#             region_dict = region_count_dict[cur_region]
-#             region_vals = region_count_dict[cur_region][cur_crime]
-#             region_count_dict[cur_region][cur_crime] = region_count_dict[cur_region][cur_crime] + 1
-#
-# print crime_count_dict
-# print("Regions")
-# for key in region_count_dict.keys():
-#     print key
-#     print(region_count_dict[key])
-#
+prostitutabase = sanfran_df[sanfran_df['Category']=='PROSTITUTION']
+print prostitutabase.head()
+
+prostituctionary = {}
+keys = sanfran_df['DayOfWeek'].unique()
+for key in keys:
+     prostituctionary[key] = 0
+
+for row in prostitutabase.iterrows():
+    #Counting crimes per region
+    if row[1][2] in prostituctionary.keys():
+        prostituctionary[row[1][2]] = prostituctionary[row[1][2]] + 1
+
+print "Days of week and prostitution"
+print prostituctionary
+
+crime_count_dict = {}
+
+for key in keys:
+    crime_count_dict[key] = 0
+# Counting all types of incidents
+crime_count_dict = {}
+region_count_dict = {}
+keys = sanfran_df['Category'].unique()
+for key in keys:
+    crime_count_dict[key] = 0
+
+for i,key in enumerate(sanfran_df['PdDistrict'].unique()):
+    region_count_dict[key] = {'KIDNAPPING': 0, 'WEAPON LAWS': 0, 'SECONDARY CODES': 0, 'WARRANTS': 0, 'LOITERING': 0, 'EMBEZZLEMENT': 0, 'PORNOGRAPHY/OBSCENE MAT': 0, 'SUICIDE': 0, 'DRIVING UNDER THE INFLUENCE': 0, 'ROBBERY': 0, 'BURGLARY': 0, 'SUSPICIOUS OCC': 0, 'ARSON': 0, 'BRIBERY': 0, 'FORGERY/COUNTERFEITING': 0, 'DRUNKENNESS': 0, 'GAMBLING': 0, 'OTHER OFFENSES': 0, 'FRAUD': 0, 'FAMILY OFFENSES': 0, 'DRUG/NARCOTIC': 0, 'TRESPASS': 0, 'LARCENY/THEFT': 0, 'VANDALISM': 0, 'NON-CRIMINAL': 0, 'EXTORTION': 0, 'LIQUOR LAWS': 0, 'VEHICLE THEFT': 0, 'STOLEN PROPERTY': 0, 'ASSAULT': 0, 'RUNAWAY': 0, 'MISSING PERSON': 0, 'DISORDERLY CONDUCT': 0, 'PROSTITUTION': 0}
+
+#Counting the distribution of different types of crimes
+for key in crime_count_dict.keys():
+    for row in sanfran_df.iterrows():
+        if row[1][0] == key:
+            crime_count_dict[key] += 1
+
+
+for row in sanfran_df.iterrows():
+     #Counting crimes per region
+        if row[1][5] in region_count_dict.keys():
+            cur_region = row[1][5]
+            cur_crime = row[1][0]
+            region_dict = region_count_dict[cur_region]
+            region_vals = region_count_dict[cur_region][cur_crime]
+            region_count_dict[cur_region][cur_crime] = region_count_dict[cur_region][cur_crime] + 1
+
+print crime_count_dict
+print("Regions")
+for key in region_count_dict.keys():
+    print key
+    print(region_count_dict[key])
+
 
 
 PARK = {'KIDNAPPING': 3, 'WEAPON LAWS': 11, 'VANDALISM': 1, 'ARSON': 1, 'SECONDARY CODES': 12, 'WARRANTS': 109, 'LOITERING': 0, 'DRUG/NARCOTIC': 63, 'EMBEZZLEMENT': 0, 'TRESPASS': 6, 'SUICIDE': 1, 'DRIVING UNDER THE INFLUENCE': 4, 'LARCENY/THEFT': 576, 'ROBBERY': 13, 'NON-CRIMINAL': 193, 'BURGLARY': 0, 'STOLEN PROPERTY': 1, 'EXTORTION': 0, 'PORNOGRAPHY/OBSCENE MAT': 0, 'MISSING PERSON': 141, 'LIQUOR LAWS': 2, 'FAMILY OFFENSES': 0, 'ASSAULT': 118, 'VEHICLE THEFT': 150, 'FORGERY/COUNTERFEITING': 0, 'PROSTITUTION': 0, 'BRIBERY': 0, 'SUSPICIOUS OCC': 60, 'FRAUD': 12, 'GAMBLING': 0, 'DISORDERLY CONDUCT': 5, 'OTHER OFFENSES': 197, 'RUNAWAY': 5, 'DRUNKENNESS': 9}
