@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b6447b3-054a-47e2-a725-bedecc8cfaf6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Databases/Sources/frequency_matrix_reuters.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Databases/Sources/part_h.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Databases/Sources/part_i.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Databases/Sources/reuters.db" afterPath="$PROJECT_DIR$/Databases/Sources/reuters.db" />
     </list>
     <ignored path="Data-Science-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,11 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frequency_matrix_reuters.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="frequency_matrix_reuters.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Databases/Sources/frequency_matrix_reuters.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06392045">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="part_i.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Databases/Sources/part_i.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -104,6 +113,7 @@
         <option value="$PROJECT_DIR$/Databases/Sources/matrix_multiplication.sql" />
         <option value="$PROJECT_DIR$/Databases/Sources/part_h.txt" />
         <option value="$PROJECT_DIR$/Databases/Sources/frequency_matrix_reuters.sql" />
+        <option value="$PROJECT_DIR$/Databases/Sources/part_i.txt" />
       </list>
     </option>
   </component>
@@ -662,8 +672,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Databases/Sources/frequency_matrix_reuters.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06392045">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Databases/Sources/part_i.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
