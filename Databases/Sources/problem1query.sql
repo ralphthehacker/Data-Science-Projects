@@ -28,3 +28,10 @@ SELECT COUNT(*) FROM
 SELECT docid,COUNT(count) FROM Frequency
 GROUP BY Frequency.docid
 HAVING COUNT(count) > 300
+
+-- Problem 6: Count entries in the table that have both words "World" and "Transactions"
+SELECT docid FROM Frequency
+WHERE Frequency.term = "world"
+INTERSECT
+SELECT docid FROM Frequency
+WHERE Frequency.term = "transactions"
