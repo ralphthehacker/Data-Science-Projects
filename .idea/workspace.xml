@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b6447b3-054a-47e2-a725-bedecc8cfaf6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Databases/Sources/matrix_multiplication.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Databases/Sources/part_f.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Databases/Sources/part_g.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ocean Microbes/Microbes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Databases/Sources/frequency_matrix_reuters.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Databases/Sources/part_h.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Databases/Sources/problem1query.sql" afterPath="$PROJECT_DIR$/Databases/Sources/problem1query.sql" />
     </list>
     <ignored path="Data-Science-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +45,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matrix_multiplication.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="matrix_multiplication.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Databases/Sources/matrix_multiplication.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="51" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="part_h.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Databases/Sources/part_h.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="frequency_matrix_reuters.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Databases/Sources/frequency_matrix_reuters.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.06392045">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -85,6 +102,8 @@
         <option value="$PROJECT_DIR$/Databases/Sources/part_g" />
         <option value="$PROJECT_DIR$/Ocean Microbes/Microbes.py" />
         <option value="$PROJECT_DIR$/Databases/Sources/matrix_multiplication.sql" />
+        <option value="$PROJECT_DIR$/Databases/Sources/part_h.txt" />
+        <option value="$PROJECT_DIR$/Databases/Sources/frequency_matrix_reuters.sql" />
       </list>
     </option>
   </component>
@@ -628,7 +647,23 @@
     <entry file="file://$PROJECT_DIR$/Databases/Sources/matrix_multiplication.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="51" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Databases/Sources/part_h.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Databases/Sources/frequency_matrix_reuters.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06392045">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding />
         </state>
       </provider>
