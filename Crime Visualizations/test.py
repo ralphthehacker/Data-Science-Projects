@@ -1,5 +1,9 @@
 import pandas
+a = [1,2]
+b = [3,4]
+print a+b
 
+pass
 
 # Loading data into the 2 dataframes
 sanfran_df = pandas.DataFrame.from_csv("/Users/ralphblanes/PycharmProjects/Data-Science-Projects/Crime Visualizations/sanfrancisco_incidents_summer_2014.csv")
